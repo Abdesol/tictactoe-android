@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tictactoe_android.single_player">
+    <ContentPage.Content>
+        <StackLayout  x:Name="Single_Player_Page" Spacing="30">
+            <StackLayout  BackgroundColor="#2196F3" Orientation="Horizontal" Spacing="4">
+                <ImageButton x:Name="back_single"
+                             Scale="5"
+                             Source="back_icon.png"
+                             HeightRequest="10"
+                             WidthRequest="10"
+                             Margin="35, 0"
+                             Clicked="Back_Single_Clicked"
+                             BackgroundColor="Transparent"
+                            />
+                <Label Text="Single Player" Margin="15, 0" TextColor="White" FontSize="35"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Spacing="60">
+                <Label x:Name="display_single_game_status" Text="Game Started" HorizontalTextAlignment="Center" FontSize="30"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name="single_1_1" WidthRequest="100" HeightRequest="100" Clicked="Single_Each_Btn_Clicked"/>
+                        <Button x:Name="single_1_2" WidthRequest="100" HeightRequest="100" Clicked="Single_Each_Btn_Clicked"/>
+                        <Button x:Name="single_1_3" WidthRequest="100" HeightRequest="100" Clicked="Single_Each_Btn_Clicked"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name="single_2_1"  WidthRequest="100" HeightRequest="100" Clicked="Single_Each_Btn_Clicked"/>
+                        <Button x:Name="single_2_2"  WidthRequest="100" HeightRequest="100" Clicked="Single_Each_Btn_Clicked"/>
+                        <Button x:Name="single_2_3"  WidthRequest="100" HeightRequest="100" Clicked="Single_Each_Btn_Clicked"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name="single_3_1"  WidthRequest="100" HeightRequest="100" Clicked="Single_Each_Btn_Clicked"/>
+                        <Button x:Name="single_3_2"  WidthRequest="100" HeightRequest="100" Clicked="Single_Each_Btn_Clicked"/>
+                        <Button x:Name="single_3_3"  WidthRequest="100" HeightRequest="100" Clicked="Single_Each_Btn_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center">
+                <Button x:Name="single_reset" BackgroundColor="Red" WidthRequest="100" HeightRequest="60" Clicked="Single_Reset_Clicked" Text="Reset"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
